@@ -1,0 +1,21 @@
+<idea-plugin version="2" url="http://www.janci.net">
+    <id>sk.svantner.idea.doctrineplugin</id>
+    <name>Doctrine Plugin</name>
+    <description>Plugin for support doctrine annotations.</description>
+
+    <version>0.1</version>
+    <vendor email="posta.janci@gmail.com" url="http://www.janci.net">Ing. Jan Svantner</vendor>
+
+    <project-components />
+
+    <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Build+Number+Ranges for description -->
+    <idea-version since-build="129.713"/>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <completion.contributor language="PHP" implementationClass="sk.svantner.idea.doctrineplugin.config.annotation.DoctrineAnnotationCompletionContributor"/>
+    </extensions>
+
+    <depends>com.jetbrains.php</depends>
+    <depends>com.intellij.modules.platform</depends>
+
+</idea-plugin>
